@@ -4,9 +4,9 @@
 * @head: head
 * Return: void
 */
-void free_stack(stack_Obj *head)
+void free_stack(stack_t *head)
 {
-	stack_Obj *a;
+	stack_t *a;
 
 	a = head;
 	while (head)

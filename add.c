@@ -5,9 +5,9 @@
  * @counter: counter
  * Return: void
 */
-void add_func(stack_Obj **head, unsigned int counter)
+void add_func(stack_t **head, unsigned int counter)
 {
-	stack_Obj *headObj;
+	stack_t *headObj;
 	int length = 0
 	int a;
 
@@ -20,8 +20,8 @@ void add_func(stack_Obj **head, unsigned int counter)
 	if (length <= 1)
 	{
 		fprintf(stderr, "L%d: can't add, stack too short\n", counter);
-		fclose(go.file);
-		free(go.content);
+		fclose(bus.file);
+		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}

@@ -5,9 +5,9 @@
  * @counter: line number
  * Return: void
 */
-void stack_func(stack_Obj **head, unsigned int counter)
+void stack_func(stack_t **head, unsigned int counter)
 {
 	(void)head;
 	(void)counter;
-	go.lifi = 0;
+	bus.lifi = 0;
 }

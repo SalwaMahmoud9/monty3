@@ -7,9 +7,9 @@
 * @content: content
 * Return: int
 */
-int execute(char *content, stack_Obj **stack, unsigned int counter, FILE *file)
+int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 {
-	inst_Obj ot[] = {
+	instruction_t ot[] = {
 				{"push", push_func}, {"pall", pall_func}, {"pint", pint_func},
 				{"pop", pop_func},
 				{"swap", swap_func},
@@ -33,7 +33,7 @@ int execute(char *content, stack_Obj **stack, unsigned int counter, FILE *file)
 	o = strtok(content, " \n\t");
 	if (o && o[0] == '#')
 		return (0);
-	go.arg = strtok(NULL, " \n\t");
+	bus.arg = strtok(NULL, " \n\t");
 	while (ot[x].opcode && o)
 	{
 		if (strcmp(o, ot[x].opcode) == 0)

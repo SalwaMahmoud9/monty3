@@ -5,13 +5,13 @@
  * @counter: line number
  * Return: void
 */
-void pint_func(stack_Obj **head, unsigned int counter)
+void pint_func(stack_t **head, unsigned int counter)
 {
 	if (*head == NULL)
 	{
 		fprintf(stderr, "L%u: can't pint, stack empty\n", counter);
-		fclose(go.file);
-		free(go.content);
+		fclose(bus.file);
+		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}

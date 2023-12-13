@@ -5,7 +5,7 @@
   *@counter: line number
   *Return: void
  */
-void nop_func(stack_Obj **head, unsigned int counter)
+void nop_func(stack_t **head, unsigned int counter)
 {
 	(void) counter;
 	(void) head;

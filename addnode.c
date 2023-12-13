@@ -5,14 +5,14 @@
  * @n: n
  * Return: void
 */
-void addnode(stack_Obj **head, int n)
+void addnode(stack_t **head, int n)
 {
 
-	stack_Obj *node;
-	stack_Obj *a;
+	stack_t *node;
+	stack_t *a;
 
 	a = *head;
-	node = malloc(sizeof(stack_Obj));
+	node = malloc(sizeof(stack_t));
 	if (node == NULL)
 	{ 
 		printf("Error\n");

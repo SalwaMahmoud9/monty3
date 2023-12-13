@@ -5,9 +5,9 @@
  * @counter: line number
  * Return: void
 */
-void swap_func(stack_Obj **head, unsigned int counter)
+void swap_func(stack_t **head, unsigned int counter)
 {
-	stack_Obj *h;
+	stack_t *h;
 	int length = 0, aux;
 
 	h = *head;
@@ -19,8 +19,8 @@ void swap_func(stack_Obj **head, unsigned int counter)
 	if (length < 2)
 	{
 		fprintf(stderr, "L%d: can't swap, stack too short\n", counter);
-		fclose(go.file);
-		free(go.content);
+		fclose(bus.file);
+		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}

@@ -5,9 +5,9 @@
  * @head: head
  * Return: void
 */
-void mod_func(stack_Obj **head, unsigned int counter)
+void mod_func(stack_t **head, unsigned int counter)
 {
-	stack_Obj *headObj;
+	stack_t *headObj;
 	int length = 0;
 	int a;
 
@@ -20,8 +20,8 @@ void mod_func(stack_Obj **head, unsigned int counter)
 	if (length <= 1)
 	{
 		fprintf(stderr, "L%d: can't mod, stack too short\n", counter);
-		fclose(go.file);
-		free(go.content);
+		fclose(bus.file);
+		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
@@ -29,8 +29,8 @@ void mod_func(stack_Obj **head, unsigned int counter)
 	if (headObj->n == 0)
 	{
 		fprintf(stderr, "L%d: division by zero\n", counter);
-		fclose(go.file);
-		free(go.content);
+		fclose(bus.file);
+		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}

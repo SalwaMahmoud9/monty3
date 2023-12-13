@@ -5,9 +5,9 @@
  * @counter: line number
  * Return: void
 */
-void pall_func(stack_Obj **head, unsigned int counter)
+void pall_func(stack_t **head, unsigned int counter)
 {
-	stack_Obj *head2;
+	stack_t *head2;
 	(void)counter;
 
 	head2 = *head;

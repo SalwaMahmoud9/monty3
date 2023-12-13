@@ -5,11 +5,11 @@
  * @counter: line number
  * Return: void
 */
-void queue_func(stack_Obj **head, unsigned int counter)
+void queue_func(stack_t **head, unsigned int counter)
 {
 	(void)head;
 	(void)counter;
-	go.lifi = 1;
+	bus.lifi = 1;
 }
 
 /**
@@ -18,12 +18,12 @@ void queue_func(stack_Obj **head, unsigned int counter)
  * @head: head
  * Return: void
 */
-void addqueue(stack_Obj **head, int n)
+void addqueue(stack_t **head, int n)
 {
-	stack_Obj *node, *aux;
+	stack_t *node, *aux;
 
 	aux = *head;
-	node = malloc(sizeof(stack_Obj));
+	node = malloc(sizeof(stack_t));
 	if (node == NULL)
 	{
 		printf("Error\n");

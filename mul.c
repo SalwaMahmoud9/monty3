@@ -5,9 +5,9 @@
  * @counter: line number
  * Return: void
 */
-void mul_func(stack_Obj **head, unsigned int counter)
+void mul_func(stack_t **head, unsigned int counter)
 {
-	stack_Obj *head2;
+	stack_t *head2;
 	int length = 0, aux;
 
 	head2 = *head;
@@ -19,8 +19,8 @@ void mul_func(stack_Obj **head, unsigned int counter)
 	if (length < 2)
 	{
 		fprintf(stderr, "L%d: can't mul, stack too short\n", counter);
-		fclose(go.file);
-		free(go.content);
+		fclose(bus.file);
+		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}

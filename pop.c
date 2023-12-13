@@ -5,15 +5,15 @@
  * @counter: line number
  * Return: void
 */
-void pop_func(stack_Obj **head, unsigned int counter)
+void pop_func(stack_t **head, unsigned int counter)
 {
-	stack_Obj *head2;
+	stack_t *head2;
 
 	if (*head == NULL)
 	{
 		fprintf(stderr, "L%d: can't pop an empty stack\n", counter);
-		fclose(go.file);
-		free(go.content);
+		fclose(bus.file);
+		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}

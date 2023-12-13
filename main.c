@@ -1,5 +1,5 @@
 #include "monty.h"
-go_Obj go = {NULL, NULL, NULL, 0};
+bus_t bus = {NULL, NULL, NULL, 0};
 /**
 * main - main
 * @argc: argc
@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 
 	size_t size = 0;
 	ssize_t r_l = 1;
-	stack_Obj *stack = NULL;
+	stack_t *stack = NULL;
 	unsigned int index = 0;
 	char *content;
 	FILE *file;
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	file = fopen(argv[1], "r");
-	go.file = file;
+	bus.file = file;
 	if (!file)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	{
 		content = NULL;
 		r_l = getline(&content, &size, file);
-		go.content = content;
+		bus.content = content;
 		index++;
 		if (r_l > 0)
 		{

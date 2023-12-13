@@ -5,9 +5,9 @@
   *@counter: line number
   *Return: void
  */
-void sub_func(stack_Obj **head, unsigned int counter)
+void sub_func(stack_t **head, unsigned int counter)
 {
-	stack_Obj *aux;
+	stack_t *aux;
 	int n, x;
 
 	aux = *head;
@@ -16,8 +16,8 @@ void sub_func(stack_Obj **head, unsigned int counter)
 	if (x < 2)
 	{
 		fprintf(stderr, "L%d: can't sub, stack too short\n", counter);
-		fclose(go.file);
-		free(go.content);
+		fclose(bus.file);
+		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}

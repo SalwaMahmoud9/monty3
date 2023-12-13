@@ -5,9 +5,9 @@
   *@counter: line number
   *Return: void
  */
-void rotr_func(stack_Obj **head, __attribute__((unused)) unsigned int counter)
+void rotr_func(stack_t **head, __attribute__((unused)) unsigned int counter)
 {
-	stack_Obj *obj1;
+	stack_t *obj1;
 
 	obj1 = *head;
 	if (*head == NULL || (*head)->next == NULL)
