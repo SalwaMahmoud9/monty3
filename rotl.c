@@ -1,13 +1,13 @@
 #include "monty.h"
 /**
-  *f_rotl- f_rotl
-  *@head: head
-  *@counter: line number
-  *Return: void
+  *f_rotl- rotates the stack to the top
+  *@head: stack head
+  *@counter: line_number
+  *Return: no return
  */
 void f_rotl(stack_t **head,  __attribute__((unused)) unsigned int counter)
 {
-	stack_t *obj1 = *head, *aux;
+	stack_t *tmp = *head, *aux;
 
 	if (*head == NULL || (*head)->next == NULL)
 	{
@@ -15,12 +15,12 @@ void f_rotl(stack_t **head,  __attribute__((unused)) unsigned int counter)
 	}
 	aux = (*head)->next;
 	aux->prev = NULL;
-	while (obj1->next != NULL)
+	while (tmp->next != NULL)
 	{
-		obj1 = obj1->next;
+		tmp = tmp->next;
 	}
-	obj1->next = *head;
+	tmp->next = *head;
 	(*head)->next = NULL;
-	(*head)->prev = obj1;
+	(*head)->prev = tmp;
 	(*head) = aux;
 }
