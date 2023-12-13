@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * swap_func - swap_func
+ * f_swap - f_swap
  * @head: head
  * @counter: line number
  * Return: void
 */
-void swap_func(stack_t **head, unsigned int counter)
+void f_swap(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
 	int length = 0, aux;

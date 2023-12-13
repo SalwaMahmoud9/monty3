@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * mul_func - mul_func
+ * f_mul - f_mul
  * @head: head
  * @counter: line number
  * Return: void
 */
-void mul_func(stack_t **head, unsigned int counter)
+void f_mul(stack_t **head, unsigned int counter)
 {
 	stack_t *head2;
 	int length = 0, aux;

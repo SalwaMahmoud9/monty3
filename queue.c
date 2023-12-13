@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * queue_func - queue_func
+ * f_queue - f_queue
  * @head: head
  * @counter: line number
  * Return: void
 */
-void queue_func(stack_t **head, unsigned int counter)
+void f_queue(stack_t **head, unsigned int counter)
 {
 	(void)head;
 	(void)counter;

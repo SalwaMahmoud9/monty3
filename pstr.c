@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * pstr_func - pstr_func
+ * f_pstr - f_pstr
  * @head: head
  * @counter: line number
  * Return: void
 */
-void pstr_func(stack_t **head, unsigned int counter)
+void f_pstr(stack_t **head, unsigned int counter)
 {
 	stack_t *head2;
 	(void)counter;

@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
-  *rotr_func- rotr_func
+  *f_rotr- f_rotr
   *@head: head
   *@counter: line number
   *Return: void
  */
-void rotr_func(stack_t **head, __attribute__((unused)) unsigned int counter)
+void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter)
 {
 	stack_t *obj1;
 

@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
-  *sub_func- sub_func
+  *f_sub- f_sub
   *@head: head
   *@counter: line number
   *Return: void
  */
-void sub_func(stack_t **head, unsigned int counter)
+void f_sub(stack_t **head, unsigned int counter)
 {
 	stack_t *aux;
 	int n, x;

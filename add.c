@@ -1,14 +1,14 @@
 #include "monty.h"
 /**
- * add_func - add_func
+ * f_add - f_add
  * @head: head
  * @counter: counter
  * Return: void
 */
-void add_func(stack_t **head, unsigned int counter)
+void f_add(stack_t **head, unsigned int counter)
 {
 	stack_t *headObj;
-	int length = 0
+	int length = 0;
 	int a;
 
 	headObj = *head;

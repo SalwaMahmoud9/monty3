@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * pchar_func - pchar_func
+ * f_pchar - f_pchar
  * @head: head
  * @counter: line number
  * Return: void
 */
-void pchar_func(stack_t **head, unsigned int counter)
+void f_pchar(stack_t **head, unsigned int counter)
 {
 	stack_t *head2;
 

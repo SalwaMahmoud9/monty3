@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * div_func - div_func
+ * f_div - f_div
  * @head: head
  * @counter: counter
  * Return: void
 */
-void div_func(stack_t **head, unsigned int counter)
+void f_div(stack_t **head, unsigned int counter)
 {
 	stack_t *headObj;
 	int length = 0;

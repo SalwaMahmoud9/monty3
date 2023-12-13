@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
-  *nop_func- nop_func
+  *f_nop- f_nop
   *@head: head
   *@counter: line number
   *Return: void
  */
-void nop_func(stack_t **head, unsigned int counter)
+void f_nop(stack_t **head, unsigned int counter)
 {
 	(void) counter;
 	(void) head;

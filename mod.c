@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * mod_func - mod_func
+ * f_mod - f_mod
  * @head: head
  * @head: head
  * Return: void
 */
-void mod_func(stack_t **head, unsigned int counter)
+void f_mod(stack_t **head, unsigned int counter)
 {
 	stack_t *headObj;
 	int length = 0;
